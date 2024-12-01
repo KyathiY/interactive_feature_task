@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="KyathiY">
+    <title>Interactive Heading</title>
+    <style>
+        /* Basic CSS styles */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 90px;
+            background-color: #a9d2d5;
+        }
+
+        h1 {
+            color: #322835;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #ffffff;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #00b34e;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="main-heading">Hello, Zephyrus Team!</h1>
+    <button id="change-text-button">Click me</button>
+
+    <script>
+        // JavaScript to handle button click
+        const button = document.getElementById("change-text-button");
+        const heading = document.getElementById("main-heading");
+
+        button.addEventListener("click", () => {
+            heading.textContent = "Great choice! You're exploring interactivity.";
+        });
+    </script>
+</body>
+</html>
